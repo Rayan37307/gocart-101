@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-
+import Image from "next/image";
+import logo02 from "@/assets/logo-02.png";
 const Navbar = () => {
 
     const router = useRouter();
@@ -22,11 +23,8 @@ const Navbar = () => {
             <div className="mx-6">
                 <div className="flex items-center justify-between max-w-7xl mx-auto py-4  transition-all">
 
-                    <Link href="/" className="relative text-4xl font-semibold text-slate-700">
-                        <span className="text-green-600">go</span>cart<span className="text-green-600 text-5xl leading-0">.</span>
-                        <p className="absolute text-xs font-semibold -top-1 -right-8 px-3 p-0.5 rounded-full flex items-center gap-2 text-white bg-green-500">
-                            plus
-                        </p>
+                    <Link href="/" className="relative">
+                        <Image src={logo02} alt="Logo" width={140} height={40} />
                     </Link>
 
                     {/* Desktop Menu */}
