@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import Image from "next/image";
-import logo02 from "@/assets/logo-02.png";
+import logo02 from "@/assets/logo-02.png";q
 const Navbar = () => {
 
     const router = useRouter();
